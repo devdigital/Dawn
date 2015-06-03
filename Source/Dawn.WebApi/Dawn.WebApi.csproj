@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DelegateWebApiBootstrapTask.cs" />
     <Compile Include="WebApiBootstrapper.cs" />
     <Compile Include="IWebApiBootstrapTask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

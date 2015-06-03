@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\AutoMoqDataAttribute.cs" />
+    <Compile Include="DelegateWebApiBootstrapTaskTests.cs" />
     <Compile Include="WebApiBootstrapperTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
