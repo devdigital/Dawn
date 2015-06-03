@@ -65,7 +65,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoMoqDataAttribute.cs" />
+    <Compile Include="Attributes\AutoMoqDataAttribute.cs" />
+    <Compile Include="DelegateOwinBootstrapTaskTests.cs" />
     <Compile Include="OwinBootstrapperTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

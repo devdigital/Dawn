@@ -5,6 +5,7 @@
     using System.Linq;
 
     using Dawn.Owin;
+    using Dawn.Owin.UnitTests.Attributes;
 
     using global::Owin;
 

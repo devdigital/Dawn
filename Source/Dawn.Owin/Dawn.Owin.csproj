@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DelegateOwinBootstrapTask.cs" />
     <Compile Include="IOwinBootstrapTask.cs" />
     <Compile Include="OwinBootstrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

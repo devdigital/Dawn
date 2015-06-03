@@ -1,4 +1,4 @@
-﻿namespace Dawn.Owin.UnitTests
+﻿namespace Dawn.Owin.UnitTests.Attributes
 {
     using Ploeh.AutoFixture;
     using Ploeh.AutoFixture.AutoMoq;
