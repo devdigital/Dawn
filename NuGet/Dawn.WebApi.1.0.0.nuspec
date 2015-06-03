@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Dawn.WebApi</id>
+        <version>1.0.0</version>
+        <authors>devdigital</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Provides simple bootstrapping to Web API projects.</description>
+        <dependencies>
+            <group targetFramework=".NETFramework4.5">
+                <dependency id="Microsoft.AspNet.WebApi.Core" version="5.2.3" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\Source\Dawn.WebApi\bin\Release\Dawn.WebApi.dll" target="lib\net45\Dawn.WebApi.dll" />
+    </files>
+</package>
