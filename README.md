@@ -6,8 +6,8 @@ Dawn is a set of simple bootstrapping helpers for .NET applications.
 ## Dawn.Owin
 
 1. Install the [Dawn.Owin](https://www.nuget.org/packages/Dawn.Owin/) NuGet package.
-2. Create *IOwinBootstrapTask* tasks for each section of your bootstrapping process.
-3. Bootstrap from your OWIN startup class with the *OwinBootstrapper*, specifying the order of the bootstrapping tasks.
+2. Create ordrered *IOwinBootstrapTask* tasks for each step of your bootstrapping process.
+3. Bootstrap from your OWIN startup class with the *OwinBootstrapper*, providing the *IAppBuilder* instance.
 
 **Example OWIN Startup Class**
 
@@ -54,8 +54,8 @@ public class WebBootstrapperTask : IOwinBootstrapTask
 ## Dawn.WebApi
 
 1. Install the [Dawn.WebApi](https://www.nuget.org/packages/Dawn.WebApi/) NuGet package.
-2. Create *IWebApiBootstrapTask* tasks for each section of your bootstrapping process.
-3. Bootstrap from your OWIN startup class with the *WebApiBootstrapper*, specifying the order of the bootstrapping tasks.
+2. Create ordered *IWebApiBootstrapTask* tasks for each step of your API bootstrapping process.
+3. Bootstrap from your API OWIN bootstrapping task with the *WebApiBootstrapper*, providing an instance of an *HttpConfiguration*.
 
 **Example API Bootstrapper**
 
