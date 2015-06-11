@@ -26,9 +26,9 @@ public class Startup
 
 **Example Bootstrapper Tasks**
 
-Our bootstrapper tasks are instances of *IOwinBootstrapperTask*. We must implement one *Run* method that takes the same instance of the OWIN *IAppBuilder*.
+Our bootstrapper tasks are instances of *IOwinBootstrapperTask* provided by Dawn. We must implement one *Run* method which shares the same instance of the OWIN *IAppBuilder* across all tasks.
 
-In this example our API bootstrapper configures an API using the ASP.NET Web API extension method *UseWebApi*. The web boostrapper task is using [NancyFx](http://nancyfx.org/) in this case to host static web pages, using the *UseNancy* extension method.
+In this example our API bootstrapper configures an API using the ASP.NET Web API extension method *UseWebApi*. The web boostrapper task is using [NancyFx](http://nancyfx.org/) to host static web pages, using the *UseNancy* extension method.
 
 ```csharp
 public class ApiBootstrapperTask : IOwinBootstrapTask
