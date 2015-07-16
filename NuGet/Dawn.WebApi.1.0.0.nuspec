@@ -3,7 +3,9 @@
     <metadata>
         <id>Dawn.WebApi</id>
         <version>1.0.0</version>
+        <title>Dawn.WebApi</title>
         <authors>devdigital</authors>
+        <projectUrl>https://github.com/devdigital/Dawn</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Provides simple bootstrapping to Web API projects.</description>
         <dependencies>

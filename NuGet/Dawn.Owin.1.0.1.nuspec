@@ -3,7 +3,9 @@
     <metadata>
         <id>Dawn.Owin</id>
         <version>1.0.1</version>
+        <title>Dawn.Owin</title>
         <authors>devdigital</authors>
+        <projectUrl>https://github.com/devdigital/Dawn</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Provides simple bootstrapping to OWIN hosting projects.</description>
         <dependencies>
