@@ -123,9 +123,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bootstrapper.cs" />
     <Compile Include="Bootstrap\ApiBootstrapperTask.cs" />
-    <Compile Include="Bootstrap\Tasks\JsonApiBootstrapTask.cs" />
-    <Compile Include="Bootstrap\Tasks\LoggingApiBootstrapTask.cs" />
+    <Compile Include="Bootstrap\Tasks\ContainerBootstrapTask.cs" />
+    <Compile Include="Bootstrap\Tasks\JsonBootstrapTask.cs" />
+    <Compile Include="Bootstrap\Tasks\LoggingBootstrapTask.cs" />
+    <Compile Include="Controllers\DefaultIdentityService.cs" />
+    <Compile Include="Controllers\IIdentityService.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Bootstrap\Tasks\RoutingWebApiBootstrapTask.cs" />

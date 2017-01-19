@@ -4,11 +4,11 @@ namespace Dawn.SampleApi.Bootstrap.Tasks
 
     using Dawn.WebApi;
 
-    public class LoggingApiBootstrapTask : IWebApiBootstrapTask
+    public class LoggingBootstrapTask : IWebApiBootstrapTask
     {
         private readonly bool includeWebApiLogging;
 
-        public LoggingApiBootstrapTask(bool includeWebApiLogging)
+        public LoggingBootstrapTask(bool includeWebApiLogging)
         {
             this.includeWebApiLogging = includeWebApiLogging;
         }

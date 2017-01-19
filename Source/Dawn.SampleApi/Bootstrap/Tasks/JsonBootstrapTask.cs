@@ -8,7 +8,7 @@
 
     using Newtonsoft.Json.Serialization;
 
-    public class JsonApiBootstrapTask : IWebApiBootstrapTask
+    public class JsonBootstrapTask : IWebApiBootstrapTask
     {
         public void Run(HttpConfiguration configuration)
         {

@@ -12,7 +12,7 @@ namespace Dawn.SampleApi
     {
         public void Configuration(IAppBuilder app)
         {
-            new OwinBootstrapper().Run(app, new[] { new ApiBootstrapperTask() });
+            new Bootstrapper(app).Run();
         }
     }
 }

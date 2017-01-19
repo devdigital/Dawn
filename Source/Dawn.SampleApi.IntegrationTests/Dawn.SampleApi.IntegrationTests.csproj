@@ -87,7 +87,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tests\Class1.cs" />
+    <Compile Include="Models\TestIdentityService.cs" />
+    <Compile Include="Tests\ValuesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
