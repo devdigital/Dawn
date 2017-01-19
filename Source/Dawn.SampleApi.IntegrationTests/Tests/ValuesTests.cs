@@ -2,7 +2,6 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Net;
 
     using Dawn.SampleApi.Controllers;
     using Dawn.SampleApi.IntegrationTests.Models;
