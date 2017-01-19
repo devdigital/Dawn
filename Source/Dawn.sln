@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dawn.Owin", "Dawn.Owin\Dawn.Owin.csproj", "{E64E48B7-AA4C-496A-B83D-2E1577BD110E}"
 EndProject
@@ -10,6 +10,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dawn.WebApi", "Dawn.WebApi\Dawn.WebApi.csproj", "{5CFC0ECC-7FC5-44F0-A766-61CFC455D1F3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dawn.WebApi.UnitTests", "Dawn.WebApi.UnitTests\Dawn.WebApi.UnitTests.csproj", "{26A49984-04E6-437C-BB59-CD7ECAC06F35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dawn.SampleApi", "Dawn.SampleApi\Dawn.SampleApi.csproj", "{DB13FAC2-45E4-4C84-B2CC-02FB1D827C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dawn.SampleApi.IntegrationTests", "Dawn.SampleApi.IntegrationTests\Dawn.SampleApi.IntegrationTests.csproj", "{FFB54BC0-D426-4F90-857A-7E2748C4D2AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{037B06AD-E027-47C2-A4AA-39F15EE29418}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{1E4B7C0B-942A-4EE6-B5BC-285147B29458}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +41,24 @@ Global
 		{26A49984-04E6-437C-BB59-CD7ECAC06F35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26A49984-04E6-437C-BB59-CD7ECAC06F35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26A49984-04E6-437C-BB59-CD7ECAC06F35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB13FAC2-45E4-4C84-B2CC-02FB1D827C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB13FAC2-45E4-4C84-B2CC-02FB1D827C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB13FAC2-45E4-4C84-B2CC-02FB1D827C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB13FAC2-45E4-4C84-B2CC-02FB1D827C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB54BC0-D426-4F90-857A-7E2748C4D2AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB54BC0-D426-4F90-857A-7E2748C4D2AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB54BC0-D426-4F90-857A-7E2748C4D2AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB54BC0-D426-4F90-857A-7E2748C4D2AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E64E48B7-AA4C-496A-B83D-2E1577BD110E} = {037B06AD-E027-47C2-A4AA-39F15EE29418}
+		{9C488257-3FC1-4C76-AEA3-72E6B40B77E1} = {037B06AD-E027-47C2-A4AA-39F15EE29418}
+		{5CFC0ECC-7FC5-44F0-A766-61CFC455D1F3} = {037B06AD-E027-47C2-A4AA-39F15EE29418}
+		{26A49984-04E6-437C-BB59-CD7ECAC06F35} = {037B06AD-E027-47C2-A4AA-39F15EE29418}
+		{DB13FAC2-45E4-4C84-B2CC-02FB1D827C7E} = {1E4B7C0B-942A-4EE6-B5BC-285147B29458}
+		{FFB54BC0-D426-4F90-857A-7E2748C4D2AD} = {1E4B7C0B-942A-4EE6-B5BC-285147B29458}
 	EndGlobalSection
 EndGlobal
