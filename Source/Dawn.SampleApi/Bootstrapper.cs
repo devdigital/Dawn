@@ -32,7 +32,7 @@
         {
             var tasks = new[]
             {
-                new ApiBootstrapperTask(this.typeRegistrations, this.instanceRegistrations)
+                new ApiBootstrapTask(this.typeRegistrations, this.instanceRegistrations)
             };
 
             new OwinBootstrapper().Run(this.app, tasks);

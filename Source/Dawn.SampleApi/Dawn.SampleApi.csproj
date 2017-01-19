@@ -124,7 +124,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrapper.cs" />
-    <Compile Include="Bootstrap\ApiBootstrapperTask.cs" />
+    <Compile Include="Bootstrap\ApiBootstrapTask.cs" />
+    <Compile Include="Extensions\DependencyResolverExtensions.cs" />
     <Compile Include="Bootstrap\Tasks\ContainerBootstrapTask.cs" />
     <Compile Include="Bootstrap\Tasks\JsonBootstrapTask.cs" />
     <Compile Include="Bootstrap\Tasks\LoggingBootstrapTask.cs" />
