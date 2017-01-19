@@ -3,22 +3,22 @@
     using System;
     using System.Collections.Generic;
     using System.Web.Http;
-    using System.Web.Http.Dependencies;
 
     using Dawn.Owin;
     using Dawn.SampleApi.Bootstrap.Tasks;
+    using Dawn.SampleApi.Extensions;
     using Dawn.SampleApi.Services;
     using Dawn.WebApi;
 
     using global::Owin;
 
-    public class ApiBootstrapperTask : IOwinBootstrapTask
+    public class ApiBootstrapTask : IOwinBootstrapTask
     {
         private readonly IDictionary<Type, object> instanceRegistrations;
 
         private readonly IDictionary<Type, Type> typeRegistrations;
 
-        public ApiBootstrapperTask(IDictionary<Type, Type> typeRegistrations, IDictionary<Type, object> instanceRegistrations)
+        public ApiBootstrapTask(IDictionary<Type, Type> typeRegistrations, IDictionary<Type, object> instanceRegistrations)
         {
             this.typeRegistrations = typeRegistrations;
             this.instanceRegistrations = instanceRegistrations;
@@ -46,14 +46,5 @@
             new WebApiBootstrapper().Run(configuration, tasks);
             app.UseWebApi(configuration);
         }
-    }
-
-    internal static class DependencyResolverExtensions
-    {
-        public static TService GetService<TService>(this IDependencyResolver dependencyResolver) 
-            where TService : class
-        {
-            return dependencyResolver.GetService(typeof(TService)) as TService;
-        }        
     }
 }
