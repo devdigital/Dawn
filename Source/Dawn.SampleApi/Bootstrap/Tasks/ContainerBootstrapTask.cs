@@ -9,6 +9,7 @@ namespace Dawn.SampleApi.Bootstrap.Tasks
     using Autofac.Integration.WebApi;
 
     using Dawn.SampleApi.Controllers;
+    using Dawn.SampleApi.Services;
     using Dawn.WebApi;
 
     public class ContainerBootstrapTask : IWebApiBootstrapTask
@@ -29,6 +30,7 @@ namespace Dawn.SampleApi.Bootstrap.Tasks
             builder.RegisterSource(new AnyConcreteTypeNotAlreadyRegisteredSource());
 
             builder.RegisterType<DefaultIdentityService>().As<IIdentityService>().SingleInstance();
+            builder.RegisterType<DefaultConfigurationService>().As<IConfigurationService>().SingleInstance();
 
             this.RegisterAdditional(builder);
 
